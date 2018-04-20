@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BMI calc</title>
+</head>
+<body>
+	<h1>BMI Calculator</h1>
+	<p>Gewicht(kg): </p><input type="number" id="gewicht">
+	<p>Lengte(cm): </p><input type="number" id="lengte">
+	<input type="button" value="bereken BMI" id="button">
+
+	<div id="resultaat"></div>
+	<script src="ajax.js"></script>
+	<script>
+		let lengte = document.getElementById('lengte').value;
+		let gewicht = document.getElementById('gewicht').value;
+		const button = document.getElementById('button');
+		const resultaat = document.getElementById('resultaat');
+
+		button.addEventListener('click', () => {
+			ajax(gewicht, lengte);
+		});
+
+		// resultaat.innerHTML += 
+
+	</script>
+</body>
+</html>
