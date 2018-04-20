@@ -13,13 +13,13 @@
 	<div id="resultaat"></div>
 	<script src="ajax.js"></script>
 	<script>
-		let lengte = document.getElementById('lengte').value;
-		let gewicht = document.getElementById('gewicht').value;
+		let lengte = document.getElementById('lengte');
+		let gewicht = document.getElementById('gewicht');
 		const button = document.getElementById('button');
 		const resultaat = document.getElementById('resultaat');
 
 		button.addEventListener('click', () => {
-			ajax(gewicht, lengte);
+			ajax(gewicht.value, lengte.value);
 		});
 
 		// resultaat.innerHTML += 
